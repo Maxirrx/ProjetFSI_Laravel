@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('bilan2', function (Blueprint $table) {
             $table->id();
             $table->string('LibBil2');
-            $table->int('NotBil2');
-            $table->int('NotOral2');
+            $table->integer('NotBil2');
+            $table->integer('NotOral2');
             $table->string('SujBil2');
             $table->date('DatBil2');
+            $table->unsignedBigInteger('utilisateur_id');
             $table->timestamps();
+            $table->foreign('utilisateur_id')->references('id')->on('utilisateur');
         });
     }
 

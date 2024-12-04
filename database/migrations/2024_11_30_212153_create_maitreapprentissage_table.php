@@ -17,7 +17,9 @@ return new class extends Migration
             $table->string('MailMai');
             $table->string('NomMai');
             $table->string('PreMai');
+            $table->unsignedBigInteger('entreprise_id');
             $table->timestamps();
+            $table->foreign('entreprise_id')->references('id')->on('entreprise');
         });
     }
 

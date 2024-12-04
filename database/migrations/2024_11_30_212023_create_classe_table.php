@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('classe', function (Blueprint $table) {
             $table->id();
             $table->string('LibCla');
-            $table->int('NbEtu');
+            $table->integer('NbEtu');
             $table->timestamps();
         });
     }
