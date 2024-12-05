@@ -12,6 +12,14 @@ class Bilan1Seeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('bilans')->insert([
+            'LibBil1' => '0001',
+            'NotBil1' => 17,
+            'RemBil1' => 'Felicitation bon trimeste',
+            'NotEnt' => 15,
+            'NotOral' => 16,
+            'DateBil1' => null,
+            
+        ]);
     }
 }

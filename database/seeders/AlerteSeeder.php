@@ -12,6 +12,9 @@ class AlerteSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('alertes')->insert([
+           'DatLim1' => '2024-12-24',
+           'DatLim2' => '2024-12-24',
+        ]);
     }
 }
