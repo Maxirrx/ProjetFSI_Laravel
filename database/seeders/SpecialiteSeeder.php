@@ -12,6 +12,10 @@ class SpecialiteSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('specialite')->insert([
+            'NomSpe' => 'SLAM'
+        ]);  \DB::table('specialite')->insert([
+            'NomSpe' => 'SISR'
+        ]);
     }
 }

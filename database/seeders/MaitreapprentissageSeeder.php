@@ -12,6 +12,11 @@ class MaitreapprentissageSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('maitreapprentissage')->insert([
+            'TelMai' => '06 54 65 35 55',
+            'MailMai' => 'maitreapprentissage@gmail.com',
+            'NomMai' => 'Leoroi',
+            'PreMai' => 'Leo',
+        ]);
     }
 }

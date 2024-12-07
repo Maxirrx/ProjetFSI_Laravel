@@ -16,5 +16,13 @@ class ClasseSeeder extends Seeder
             'LibCLa' => '3OLEN',
             'NbEtu' => 15,
         ]);
+        \DB::table('classe')->insert([
+            'LibCLa' => '4OLEN',
+            'NbEtu' => 15,
+        ]);
+        \DB::table('classe')->insert([
+            'LibCLa' => '5OLEN',
+            'NbEtu' => 15,
+        ]);
     }
 }

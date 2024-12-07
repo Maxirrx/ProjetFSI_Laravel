@@ -12,6 +12,14 @@ class TypeutilisateurSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('typeutilisateur')->insert([
+            'TypUti' => 'Administrateur',
+        ]);
+        \DB::table('typeutilisateur')->insert([
+            'TypUti' => 'Etudiant',
+        ]);
+        \DB::table('typeutilisateur')->insert([
+            'TypUti' => 'Tuteur',
+        ]);
     }
 }

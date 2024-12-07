@@ -12,6 +12,13 @@ class EntrepriseSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \DB::table('entreprise')->insert([
+            'TelEnt' => '06 48 56 85 96',
+            'MailEnt' => 'societe@societe.com',
+            'NomEnt' => 'societe',
+            'AdrEnt' => 'societe 6 rue de la societe',
+            'CpEnt' => '07452',
+            'VilEnt' => 'Strasbourg',
+        ]);
     }
 }
